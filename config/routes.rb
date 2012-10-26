@@ -1,6 +1,6 @@
 PgAutocompleteSearch::Application.routes.draw do
 
-  root :to => "posts#index"
+  root :to => "search#post"
   resources :posts
   match 'post_search' => 'search#search'
   match 'search' => 'search#post'
