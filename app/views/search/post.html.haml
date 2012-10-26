@@ -1,0 +1,26 @@
+%h1 Search Posts
+
+.container
+  .search
+    = label_tag "To search, start typing below:"
+    = text_field_tag :search, nil, :id => "searcher"
+  #results
+
+:javascript
+
+  $("#searcher").keyup(function(event) {
+    $.get('#{post_search_url}?search='+ $(this).val(), function(data) {
+      window.d = data;
+      var posts = data["posts"];
+      document.getElementById("results").innerHTML = "";
+      $.each(posts, function(index, post){
+        var div = document.createElement('div');
+        $(div).addClass("post");
+        $(div).append("<h3>" + post.title + "</h3>");
+        $(div).append("<br>");
+        $(div).append(post.body);
+        var results = document.getElementById("results");
+        $(results).append(div);
+      });
+    });
+  });
