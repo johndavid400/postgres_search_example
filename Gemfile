@@ -16,4 +16,5 @@ gem 'jquery-rails'
 gem 'jquery-ui-rails'
 gem 'pry-rails'
 gem 'pry'
+gem 'faker'
 
