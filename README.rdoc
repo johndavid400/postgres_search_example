@@ -8,7 +8,7 @@ Simply clone this repo and cd into it, then run the commands below to get starte
   rake db:create db:migrate db:seed
   rails s
 
-== Getting Started
+== Searching
 
 Then navigate to:
 
