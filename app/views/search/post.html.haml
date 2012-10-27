@@ -13,6 +13,7 @@
       window.d = data;
       var posts = data["posts"];
       document.getElementById("results").innerHTML = "";
+      $("#results").append("results: " + posts.length);
       $.each(posts, function(index, post){
         var div = document.createElement('div');
         $(div).addClass("post");
