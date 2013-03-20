@@ -12,6 +12,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
   gem 'execjs'
   gem 'therubyracer'
+  gem 'bootstrap-sass-rails'
 end
 
 gem 'jquery-rails'
@@ -19,4 +20,3 @@ gem 'jquery-ui-rails'
 gem 'pry-rails'
 gem 'pry'
 gem 'faker'
-
