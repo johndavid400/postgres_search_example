@@ -1,3 +1,6 @@
+%h5.text-info
+  search results:
+  = @posts.count
 - @posts.each do |post|
   .post
     %h4= post.title
