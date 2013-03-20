@@ -9,10 +9,10 @@
 require 'faker'
 
 @n = 0
-30.times do
+10.times do
   puts @n
   @n = @n + 1
-  1000.times do
+  100.times do
     Post.create title: Faker::Lorem.word, body: Faker::Lorem.word
   end
 end
