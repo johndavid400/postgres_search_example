@@ -1,4 +1,4 @@
-PgAutocompleteSearch::Application.routes.draw do
+PostgresSearch::Application.routes.draw do
 
   root :to => "search#post"
   resources :posts

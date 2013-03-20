@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-PgAutocompleteSearch::Application.load_tasks
+PostgresSearch::Application.load_tasks
